@@ -16,7 +16,7 @@ function App() {
     {
       date: new Date(2022, 5, 21),
       title: "Car Insurance",
-      price: 99,
+      price: 100,
     },
   ];
   return (

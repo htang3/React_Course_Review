@@ -1,6 +1,6 @@
 import "./App.css";
-import ExpenseItem from "./components/Expenseitem";
 
+import Expenses from "../src/components/Expenses/Expenses";
 function App() {
   const expenses = [
     {
@@ -23,21 +23,8 @@ function App() {
     <div>
       <h1>Let's get started</h1>
       <p>This is also visible!</p>
-      <ExpenseItem
-        date={expenses[0].date}
-        title={expenses[0].title}
-        price={expenses[0].price}
-      />
-      <ExpenseItem
-        date={expenses[1].date}
-        title={expenses[1].title}
-        price={expenses[1].price}
-      />
-      <ExpenseItem
-        date={expenses[2].date}
-        title={expenses[2].title}
-        price={expenses[2].price}  
-      />
+
+      <Expenses data={expenses} />
     </div>
   );
 }
